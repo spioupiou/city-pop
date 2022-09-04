@@ -4,20 +4,20 @@ from janome.tokenizer import Tokenizer
 import markovify
 
 df = pd.read_csv('lyrics.csv')
-
 pd.set_option("display.max_colwidth", 1000)
 string = df['lyrics'].to_string(index=False)
-output_file = open('text.txt', 'a')
+
+output_file = open('lyrics.txt', 'w')
 output_file.write(string)
 output_file.close()
 
 # Format the lyrics
-text_file = open('text.txt', 'r')
+text_file = open('lyrics.txt', 'r')
 text = text_file.read()
 
 text = text.replace('\\n', ' ')
 text = text.replace('\n', ' ')
-text = text.replace('\u3000', '') #
+text = text.replace('\u3000', '')
 
 text = text.replace('・・・', '')
 text = text.replace('...', '')
@@ -29,10 +29,10 @@ text = text.replace('」', '')
 text = text.replace('…', '')
 text = text.replace('、', '')
 text = text.replace(',', '')
-
+print(text)
 text = text.replace(' ', '\n')
 text = text.replace('\n\n', '')
-
+print(text)
 # Create a new instance of the Tokenizer
 t = Tokenizer()
 
