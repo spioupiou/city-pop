@@ -1,6 +1,7 @@
 TO DO:
 - Scrapping from the Web
 - Add more songs
+- Build test and continuous integration for the scraper
 
 ----1st Try----
 
