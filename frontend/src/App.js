@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider, Text, Container } from '@chakra-ui/react'
+import GenerateButton from './components/GenerateButton';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ChakraProvider>
+      <Container>
+        <Text
+          bgGradient='linear(to-l, #7928CA, #FF0080)'
+          bgClip='text'
+          fontSize='6xl'
+          fontWeight='extrabold'
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          City Pop Generator
+        </Text>
+        <GenerateButton/>
+      </Container>
+    </ChakraProvider>
   );
 }
 
