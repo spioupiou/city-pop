@@ -1,13 +1,20 @@
 ### RUN
+- Copy the following file:
+```bash
 cp app/data/lyrics_template.csv app/data/lyrics.csv
+```
+- Run the below command:
+```bash
+docker-compose up -d
+```
 
-TO DO:
-- Scrapping from the Web
+#### TO DO
 - Add more songs
-- Build test and continuous integration for the scraper
+- Make tests
+- Deploy
 
-----1st Try----
-
+----Sample----
+<blockquote>
 私の未来はあなたと同じ小指が話す約束が
 
 せつなさにおぼれて
@@ -29,3 +36,4 @@ TO DO:
 私のことを決して本気で愛さないでと泣いたあの季節が
 
 ツキを呼ぶわって頬にキスしていた恋と愛とは違うものだよと
+</blockquote>
