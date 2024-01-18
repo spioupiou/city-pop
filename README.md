@@ -1,5 +1,5 @@
 ### RUN
-- Copy the following file:
+- Create the data source:
 ```bash
 cp app/data/lyrics_template.csv app/data/lyrics.csv
 ```
