@@ -1,20 +1,21 @@
-import { ChakraProvider, Text, Container } from '@chakra-ui/react'
+import { ChakraProvider, Center, Box, VStack, Flex } from '@chakra-ui/react'
 import GenerateButton from './components/GenerateButton';
+import Title from './components/Title';
+
 
 function App() {
   return (
     <ChakraProvider>
-      <Container>
-        <Text
-          bgGradient='linear(to-l, #7928CA, #FF0080)'
-          bgClip='text'
-          fontSize='6xl'
-          fontWeight='extrabold'
-        >
-          City Pop Generator
-        </Text>
-        <GenerateButton/>
-      </Container>
+      <Flex justifyContent="center" alignItems="center" height="100vh" p={4}>
+        <Box border="1px" borderColor="lightgray" p={4}>
+          <Center>
+          <VStack spacing={4}>
+            <Title/>
+            <GenerateButton/>
+            </VStack>
+          </Center>
+        </Box>
+      </Flex>
     </ChakraProvider>
   );
 }
