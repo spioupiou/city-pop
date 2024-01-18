@@ -1,3 +1,6 @@
+### RUN
+cp app/data/lyrics_template.csv app/data/lyrics.csv
+
 TO DO:
 - Scrapping from the Web
 - Add more songs
